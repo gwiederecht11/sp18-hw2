@@ -13,6 +13,10 @@ class PagesController < ApplicationController
   def age
   end
 
+  def me
+    @me = Me.new params[:name], params[:from], params[:year], params[:from], params[:excite]
+  end
+
   def person
     @person = Person.new params[:name], params[:age]
   end
